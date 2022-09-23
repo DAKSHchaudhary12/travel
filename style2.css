@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100;
+    height: 100vh;
+    background-image:url(./images/photo-1521194263619-39ecc5b55c61.jpeg) ;
+    background-size: cover;
+    background-position: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+
+}
+
+nav{
+    text-align: right;
+    flex: 1;
+}
+
+nav ul li{
+    list-style: none;
+    display:  inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+button{
+    width: 100px;
+    color: black;
+    background: white;
+    font-size: 12px;
+    border: 0;
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 30px;
+
+}
+
+.col{
+    font-size: 100px;
+    flex-basis: 50%;
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+
+}
+
+.row{
+    display: flex;
+    height: 80%;
+    align-items: center;
+
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    background: url(./images/photo-1521194263619-39ecc5b55c61.jpeg);
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 10px 15px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: cover;
+    display:inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+
+}
+
+.c1{
+    background-image: url(./images/taj-mahal-agra-india_53876-47058.jpg);
+    background-size: cover;
+}
+
+.c2{
+    background-image: url(./images/aerial-shot-boat-spiti-river-india_181624-29237.jpg);
+    background-size: cover;
+}
+
+.c3{
+    background-image: url(./images/1000_F_376788438_YRG7Yd7WWsmm168uXdYhUMvKTSRqg285.jpg);
+    background-size: cover;
+}
+
+.c4{
+    background-image: url(./images/1000_F_284984523_uGkkXJUjJPZztW57FtRaHZZ3R7habZAM.jpg);
+    background-size: cover;
+}
+
+.card:hover{
+    transform: scale(1.3);
+}
+
+button:hover{
+    color: red;
+}
+
+@media screen and (max-width:913px){
+    .row{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+    .col{
+        flex-basis: 10%;
+    }
+    .container{
+        height: auto;
+
+    }
+    .card-col{
+        margin-top:2rem;
+    }
+}
+
+
+@media screen and (max-width:300px){
+    .travel{
+
+        font-size:70px ;
+    }
+}
+
